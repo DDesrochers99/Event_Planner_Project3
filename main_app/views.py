@@ -86,9 +86,13 @@ class EventUpdate(LoginRequiredMixin, UpdateView):
     fields = ['name', 'date', 'location', 'description', 'category', 'participants', 'vendors']
 
 
+
+
 class EventDelete(LoginRequiredMixin, DeleteView):
     model = Event
     success_url = "/upcoming_events"
+
+
 
 
 def signup(request):
