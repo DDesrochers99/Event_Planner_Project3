@@ -49,6 +49,54 @@
         transform: scale(1.05);
         color: white;
     }
+    /* Team Members Section */
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.member {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.member-icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #3498db; /* Adjust the color as needed */
+}
+
+.member h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.member p {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .member {
+        width: 100%;
+    }
+}
+
     </style>
 </head>
 <body>
