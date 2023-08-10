@@ -1,1 +1,1 @@
-WSGI_APPLICATION = eventplanner.wsgi.application'
+web: gunicorn eventplanner.wsgi
