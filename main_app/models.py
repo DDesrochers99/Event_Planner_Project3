@@ -14,7 +14,7 @@ class Vendor(models.Model):
     description = models.TextField()
     phone_number = models.CharField(max_length=255)
     email = models.EmailField(unique=True)
-    pricing = models.CharField()
+    pricing = models.CharField(max_length=255)
 
 
     def __str__(self):
